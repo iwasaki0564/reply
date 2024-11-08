@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Reply</title>
-  <script src="https://kit.fontawesome.com/2378359dfe.js" crossorigin="anonymous"></script>
-</head>
-<body>
+{{-- テンプレート展開 --}}
+@extends('layouts.app')
+
+{{-- タイトル --}}
+@section('title', 'Reply')
+
+{{-- 内容 --}}
+@section('content')
   <div>
     <h2>テンプレート一覧</h2>
     <a href="/create">追加</a>
@@ -61,5 +59,4 @@
         .catch(err => alert("コピーに失敗しました: " + err));
     }
   </script>
-</body>
-</html>
+@endsection
