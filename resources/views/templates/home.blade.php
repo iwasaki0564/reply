@@ -7,7 +7,6 @@
 {{-- 内容 --}}
 @section('content')
   <div>
-    <h2>テンプレート一覧</h2>
     <a href="/create">追加</a>
     <table border="1">
       <tr>
